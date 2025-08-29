@@ -1,5 +1,6 @@
 # GodotTutorial
-My first project using the IDE Godot.
+My first project using the IDE Godot.\
+Made with Godot 4.4.1 stable
 
 I started with this Tutorial from 2024:\
 [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) 
