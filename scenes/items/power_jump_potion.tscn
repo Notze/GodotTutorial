@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://q0y0y4fq5soe"]
+
+[ext_resource type="Texture2D" uid="uid://bh12y7qotnjg7" path="res://assets/sprites/world_tileset.png" id="2_eup7c"]
+[ext_resource type="PackedScene" uid="uid://kbqjfa48r8aq" path="res://scenes/compositions/collectable.tscn" id="2_if8qs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eyj7r"]
+size = Vector2(8, 14)
+
+[node name="PowerJumpPotion" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_eup7c")
+region_enabled = true
+region_rect = Rect2(4, 114, 8, 14)
+
+[node name="Collectable" parent="." instance=ExtResource("2_if8qs")]
+action = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collectable"]
+shape = SubResource("RectangleShape2D_eyj7r")

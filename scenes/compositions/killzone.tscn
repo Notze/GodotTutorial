@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsd1dot6uc5aq"]
+
+[ext_resource type="Script" uid="uid://blpt8ma1bv3f6" path="res://scripts/compositions/killzone.gd" id="1_a4hm4"]
+
+[node name="Killzone" type="Area2D"]
+collision_mask = 128
+script = ExtResource("1_a4hm4")
+
+[node name="RestartTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="PlayerTouched"]
+[connection signal="timeout" from="RestartTimer" to="." method="RestartGame"]

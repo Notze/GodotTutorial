@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://lyjj72b72r78"]
+
+[ext_resource type="Script" uid="uid://5d4vg5cinnvl" path="res://scripts/compositions/gravity.gd" id="1_r2pco"]
+
+[node name="Grounded" type="Node"]
+script = ExtResource("1_r2pco")

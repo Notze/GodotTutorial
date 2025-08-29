@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://fxdxh3i7hbsv"]
+
+[node name="TutorialJump" type="RichTextLabel"]
+offset_right = 64.0
+offset_bottom = 16.0
+bbcode_enabled = true
+text = "Press and release [b]space[/b] to jump."
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
